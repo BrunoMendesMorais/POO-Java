@@ -1,7 +1,6 @@
 package br.ifsp.Associacaosimples;
 
-public class Funcionario {
-	private String nome;
+public class Funcionario extends Pessoa{
 	private Dependente dependente;
 	
 	//injeção de dependência
@@ -9,11 +8,7 @@ public class Funcionario {
 		this.dependente = dependente;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	
-	public String getNome() {
-		return nome;
+	public Funcionario(String nome) {
+		super(nome);
 	}
 }

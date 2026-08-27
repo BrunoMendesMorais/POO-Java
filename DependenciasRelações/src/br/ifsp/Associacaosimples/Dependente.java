@@ -1,13 +1,20 @@
 package br.ifsp.Associacaosimples;
 
-public class Dependente {
-	private String nome;
-	
-	public void setNome(String nome) {
-		this.nome = nome;
+public class Dependente extends Pessoa{
+	public Dependente(String nome) {
+		super(nome);
+		
+		super.nome="Jao";
+		
+		super.metodoImaginario();
 	}
 	
-	public String getNome() {
-		return nome;
+	@Override
+	public void metodoImaginario() {
+		
+	}
+	
+	public void metodoNoFilho() {
+		
 	}
 }
